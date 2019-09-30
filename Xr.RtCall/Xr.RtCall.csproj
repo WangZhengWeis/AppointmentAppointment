@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA400FB0-CBE4-4A99-84C2-2E50371FEFA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xr.RtCall</RootNamespace>
+    <AssemblyName>Xr.RtCall</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>call.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RtCallSocket\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RtCallSocket\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RtCallSocket\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TX.Framework">
+      <HintPath>..\Xr.Common\Lib\TX.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AddAndUpdateConfig.cs" />
+    <Compile Include="Model\AppConfigEntity.cs" />
+    <Compile Include="Model\AppContext.cs" />
+    <Compile Include="Model\AvaDateEntity.cs" />
+    <Compile Include="Model\EncryptionClass.cs" />
+    <Compile Include="Model\HelperClass.cs" />
+    <Compile Include="Model\InterfaceAddress.cs" />
+    <Compile Include="Model\IsOpen.cs" />
+    <Compile Include="Model\PatientList.cs" />
+    <Compile Include="Model\RestSharpHelper.cs" />
+    <Compile Include="Model\WebConfigHelper.cs" />
+    <Compile Include="pages\DoctorCodeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\DoctorCodeFrm.Designer.cs">
+      <DependentUpon>DoctorCodeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\HostingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\HostingForm.Designer.cs">
+      <DependentUpon>HostingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\RtCallMessageFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\RtCallMessageFrm.Designer.cs">
+      <DependentUpon>RtCallMessageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\RtCallPeationFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\RtCallPeationFrm.Designer.cs">
+      <DependentUpon>RtCallPeationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\RtIntersectionAppointmentFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\RtIntersectionAppointmentFrm.Designer.cs">
+      <DependentUpon>RtIntersectionAppointmentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xr.RtCallSettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xr.RtCallSettingFrm.Designer.cs">
+      <DependentUpon>Xr.RtCallSettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xr.RtCallClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xr.RtCallClick.Designer.cs">
+      <DependentUpon>Xr.RtCallClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="pages\DoctorCodeFrm.resx">
+      <DependentUpon>DoctorCodeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\HostingForm.resx">
+      <DependentUpon>HostingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\RtCallMessageFrm.resx">
+      <DependentUpon>RtCallMessageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\RtCallPeationFrm.resx">
+      <DependentUpon>RtCallPeationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\RtIntersectionAppointmentFrm.resx">
+      <DependentUpon>RtIntersectionAppointmentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Xr.RtCallClick.resx">
+      <DependentUpon>Xr.RtCallClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xr.RtCallSettingFrm.resx">
+      <DependentUpon>Xr.RtCallSettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xr.Common\Xr.Common.csproj">
+      <Project>{2a32eac8-c9fd-4e0d-a0c5-f6d1bfeb7462}</Project>
+      <Name>Xr.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xr.Http\Xr.Http.csproj">
+      <Project>{b694c623-4dab-40dc-9446-3d0bf4fb0249}</Project>
+      <Name>Xr.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xr\Xr.csproj">
+      <Project>{dda4e544-c964-4ef6-89e9-a997b595fbd5}</Project>
+      <Name>Xr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="call.ico" />
+    <Content Include="RtCallSocket\CSkin.dll" />
+    <Content Include="RtCallSocket\Newtonsoft.Json.dll" />
+    <Content Include="RtCallSocket\RestSharp.dll" />
+    <Content Include="叫号配置文件说明.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

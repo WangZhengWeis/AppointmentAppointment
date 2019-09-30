@@ -1,0 +1,2 @@
+des.dll、LibSand.dll、sand.ini是衫德pos机的，本项目目前没用到
+zxing.dll是生成二维码的，本项目目前没用到

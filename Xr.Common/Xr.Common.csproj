@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A32EAC8-C9FD-4E0D-A0C5-F6D1BFEB7462}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xr.Common</RootNamespace>
+    <AssemblyName>Xr.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Utils\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Xr.RtManager\ExDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TX.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\TX.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CollectionExtensions.cs" />
+    <Compile Include="Common\CommandLineArgs.cs" />
+    <Compile Include="Common\DataRowExtensions.cs" />
+    <Compile Include="Common\DrawingUtils.cs" />
+    <Compile Include="Common\EnumDescriptor.cs" />
+    <Compile Include="Common\EnumDescriptorAttribute.cs" />
+    <Compile Include="Common\EnumUtils.cs" />
+    <Compile Include="Common\IdCardNoParser.cs" />
+    <Compile Include="Common\MnemonicCodeUtils.cs" />
+    <Compile Include="Common\NetUtils.cs" />
+    <Compile Include="Common\ReflectionUtils.cs" />
+    <Compile Include="Common\SearchMatchType.cs" />
+    <Compile Include="Common\TypeUtils.cs" />
+    <Compile Include="Common\WorkingProgressEventArgs.cs" />
+    <Compile Include="Common\XmlExtensions.cs" />
+    <Compile Include="Controls\BorderPanelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ButtonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExtensions.cs" />
+    <Compile Include="Controls\DataController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DataController.designer.cs">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlyoutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBorderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBorderPanel.Designer.cs">
+      <DependentUpon>GroupBorderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ISupportHotkeys.cs" />
+    <Compile Include="Controls\MenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuControl.Designer.cs">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TreeMenuControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeMenuControl.Designer.cs">
+      <DependentUpon>TreeMenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OpaqueCommand.cs" />
+    <Compile Include="Controls\PageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PageControl.Designer.cs">
+      <DependentUpon>PageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PanelEnhanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelEx.Designer.cs">
+      <DependentUpon>PanelEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureViewer.Designer.cs">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RequiredMarker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RequiredMarker.designer.cs">
+      <DependentUpon>RequiredMarker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReservationCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ReservationCalendar.Designer.cs">
+      <DependentUpon>ReservationCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReservationInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ReservationInfoPanel.Designer.cs">
+      <DependentUpon>ReservationInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmAddImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmAddImage.designer.cs">
+      <DependentUpon>frmAddImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmPreview.designer.cs">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmSourceCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditor\frmSourceCode.designer.cs">
+      <DependentUpon>frmSourceCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichEditor\RichEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditor\RichEditor.designer.cs">
+      <DependentUpon>RichEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichEditor\RichEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditor\RichEditorForm.Designer.cs">
+      <DependentUpon>RichEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBarSeparator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TXButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HintMessageBoxIcon.cs" />
+    <Compile Include="Internal\HintTextEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internal\HintTextEditForm.designer.cs">
+      <DependentUpon>HintTextEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\HintMessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internal\HintMessageBoxForm.designer.cs">
+      <DependentUpon>HintMessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internal\MessageBoxForm.designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\ValidateErrorNotifier.cs" />
+    <Compile Include="MessageBoxUtils.cs" />
+    <Compile Include="Model\RoundRectangle.cs" />
+    <Compile Include="Model\Structs.CS" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SKin\ColorScheme.cs" />
+    <Compile Include="SKin\EnumTheme.cs" />
+    <Compile Include="SKin\SkinManager.cs" />
+    <Compile Include="SKin\SkinTheme.cs" />
+    <Compile Include="SKin\SkinThemeBlueSea.cs" />
+    <Compile Include="SKin\SkinThemeDefault.cs" />
+    <Compile Include="SKin\SkinThemeKissOfAngel.cs" />
+    <Compile Include="SKin\SkinThemeNoFlower.cs" />
+    <Compile Include="SKin\SkinThemeSunsetRed.cs" />
+    <Compile Include="Utils\ControlValueReader.cs" />
+    <Compile Include="Utils\ControlValueWriter.cs" />
+    <Compile Include="Utils\GDIHelper.cs" />
+    <Compile Include="Utils\Enums.cs" />
+    <Compile Include="Utils\HotkeysManager.cs" />
+    <Compile Include="Utils\IHotkeysRegistration.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Validation\IdCardNoAttribute.cs" />
+    <Compile Include="Validation\IdCardNoValidator.cs" />
+    <Compile Include="Validation\MailboxAttribute.cs" />
+    <Compile Include="Validation\MobileAttribute.cs" />
+    <Compile Include="Validation\MailboxValidator.cs" />
+    <Compile Include="Validation\MobileValidator.cs" />
+    <Compile Include="Validation\RequiredAttribute.cs" />
+    <Compile Include="Validation\RequiredValidator.cs" />
+    <Compile Include="Validation\ValidateAttribute.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="ValidatorManager.cs" />
+    <Compile Include="XtraGridExtensions.cs" />
+    <Compile Include="ZeboneException.cs" />
+    <Compile Include="{Win32}\Enums\APIsEnums.cs" />
+    <Compile Include="{Win32}\IniConfig.cs" />
+    <Compile Include="{Win32}\NativeMethods\Comctl32.cs" />
+    <Compile Include="{Win32}\NativeMethods\Gdi32.cs" />
+    <Compile Include="{Win32}\NativeMethods\User32.cs" />
+    <Compile Include="{Win32}\Structs\APIsStructs.cs" />
+    <Compile Include="{Win32}\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\check.png" />
+    <None Include="Image\code.png" />
+    <None Include="Image\document_preview_archive.png" />
+    <Content Include="Image\HintMessageError.png" />
+    <Content Include="Image\HintMessageSuccess.png" />
+    <None Include="Image\the_pictures_icon.png" />
+    <Content Include="Image\ValidateErrorIcon.png" />
+    <Content Include="Lib\TX.Framework.dll" />
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\BorderPanelButton.resx">
+      <DependentUpon>BorderPanelButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DataController.resx">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupBorderPanel.resx">
+      <DependentUpon>GroupBorderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PageControl.resx">
+      <DependentUpon>PageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PictureViewer.resx">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReservationCalendar.resx">
+      <DependentUpon>ReservationCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReservationInfoPanel.resx">
+      <DependentUpon>ReservationInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RichEditor\frmAddImage.resx">
+      <DependentUpon>frmAddImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RichEditor\frmPreview.resx">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RichEditor\frmSourceCode.resx">
+      <DependentUpon>frmSourceCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RichEditor\RichEditor.resx">
+      <DependentUpon>RichEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RichEditor\RichEditorForm.resx">
+      <DependentUpon>RichEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToolBar.resx">
+      <DependentUpon>ToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToolBarButton.resx">
+      <DependentUpon>ToolBarButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internal\HintTextEditForm.resx">
+      <DependentUpon>HintTextEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internal\HintMessageBoxForm.resx">
+      <DependentUpon>HintMessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internal\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xr.Http\Xr.Http.csproj">
+      <Project>{b694c623-4dab-40dc-9446-3d0bf4fb0249}</Project>
+      <Name>Xr.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xr\Xr.csproj">
+      <Project>{dda4e544-c964-4ef6-89e9-a997b595fbd5}</Project>
+      <Name>Xr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BE6560A-58BB-4E9F-8F29-697E94557828}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xr.RtManager</RootNamespace>
+    <AssemblyName>Xr.RtManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExDll\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>ExDll\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing">
+      <HintPath>ExDll\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppContext.cs" />
+    <Compile Include="Control\RoomPanelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\MyTextBox.designer.cs">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\TextMenu.Designer.cs">
+      <DependentUpon>TextMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Common.cs" />
+    <Compile Include="Dialog\FrmProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FrmProcessing.designer.cs">
+      <DependentUpon>FrmProcessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\WaitingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\WaitingForm.designer.cs">
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\cms\Article.cs" />
+    <Compile Include="Module\cms\ArticleInfoEntity.cs" />
+    <Compile Include="Module\cms\DoctorVSEntity.cs" />
+    <Compile Include="Module\cms\ClinicInfoEntity.cs" />
+    <Compile Include="Module\cms\DefaultVisitEntity.cs" />
+    <Compile Include="Module\cms\DoctorInfoEntity.cs" />
+    <Compile Include="Module\cms\DeptInfoEntity.cs" />
+    <Compile Include="Module\cms\HolidayInfoEntity.cs" />
+    <Compile Include="Module\cms\WorkingDayEntity.cs" />
+    <Compile Include="Module\cms\HospitalInfoEntity.cs" />
+    <Compile Include="Module\cms\MessageInfoEntity.cs" />
+    <Compile Include="Module\scheduling\NotOpenEntity.cs" />
+    <Compile Include="Module\scheduling\SourceDataEntity.cs" />
+    <Compile Include="Module\scheduling\ScheduledEntity.cs" />
+    <Compile Include="Module\scheduling\SchedulingSubEntity.cs" />
+    <Compile Include="Module\scheduling\SchedulingEntity.cs" />
+    <Compile Include="Module\System\ClientVersionEntity.cs" />
+    <Compile Include="Module\System\AppConfigEntity.cs" />
+    <Compile Include="Module\System\DeptEntity.cs" />
+    <Compile Include="Module\System\FunctionEntity.cs" />
+    <Compile Include="Module\System\SchedulingSuspensionLogEntity.cs" />
+    <Compile Include="Module\System\LogEntity.cs" />
+    <Compile Include="Module\System\ModifyPasswordEntity.cs" />
+    <Compile Include="Module\System\RoleEntity.cs" />
+    <Compile Include="Module\System\DictEntity.cs" />
+    <Compile Include="Module\System\OfficeEntity.cs" />
+    <Compile Include="Module\System\MenuEntity.cs" />
+    <Compile Include="Module\System\UserEntity.cs" />
+    <Compile Include="Module\System\SessionInfo.cs" />
+    <Compile Include="Module\triage\AnsynEntity.cs" />
+    <Compile Include="Module\triage\DoctorSittingInfoEntity.cs" />
+    <Compile Include="Module\triage\RestSharpHelper.cs" />
+    <Compile Include="Module\triage\SocialCard.cs" />
+    <Compile Include="Module\triage\WaitingPatients.cs" />
+    <Compile Include="Pages\booking\AppointmentQueryForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\AppointmentQueryForm.Designer.cs">
+      <DependentUpon>AppointmentQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\booking\AppointmentStatisticsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\AppointmentStatisticsForm.Designer.cs">
+      <DependentUpon>AppointmentStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\booking\BlackListAdminForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\BlackListAdminForm.Designer.cs">
+      <DependentUpon>BlackListAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\booking\FinshPatientForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\FinshPatientForm.Designer.cs">
+      <DependentUpon>FinshPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\booking\TodayAppointmentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\TodayAppointmentForm.Designer.cs">
+      <DependentUpon>TodayAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\booking\BlackListAddFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\booking\BlackListAddFrm.Designer.cs">
+      <DependentUpon>BlackListAddFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\ArticleManagementSettingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\ArticleManagementSettingForm.Designer.cs">
+      <DependentUpon>ArticleManagementSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\ClinicSettingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\ClinicSettingForm.Designer.cs">
+      <DependentUpon>ClinicSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\DeptSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\DeptSettingsForm.Designer.cs">
+      <DependentUpon>DeptSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\VisitingTimeSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\VisitingTimeSettingsForm.Designer.cs">
+      <DependentUpon>VisitingTimeSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\DoctorSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\DoctorSettingsForm.Designer.cs">
+      <DependentUpon>DoctorSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\HolidaySettingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\HolidaySettingForm.Designer.cs">
+      <DependentUpon>HolidaySettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\HospitalSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\HospitalSettingsForm.Designer.cs">
+      <DependentUpon>HospitalSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cms\MessageManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\cms\MessageManagement.Designer.cs">
+      <DependentUpon>MessageManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\MenZhenTeXuHuZhuanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\MenZhenTeXuHuZhuanEdit.Designer.cs">
+      <DependentUpon>MenZhenTeXuHuZhuanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\AddRowNumberEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\AddRowNumberEdit.Designer.cs">
+      <DependentUpon>AddRowNumberEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\NotOpenListEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\NotOpenListEdit.Designer.cs">
+      <DependentUpon>NotOpenListEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\ModifyNumberSourceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\ModifyNumberSourceEdit.Designer.cs">
+      <DependentUpon>ModifyNumberSourceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\WorkNumVerificationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\WorkNumVerificationEdit.Designer.cs">
+      <DependentUpon>WorkNumVerificationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\TingZhenEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\TingZhenEdit.Designer.cs">
+      <DependentUpon>TingZhenEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\RemarksEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\RemarksEdit.Designer.cs">
+      <DependentUpon>RemarksEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\ScheduledListForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\ScheduledListForm.Designer.cs">
+      <DependentUpon>ScheduledListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\BatchSchedulingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\BatchSchedulingForm.Designer.cs">
+      <DependentUpon>BatchSchedulingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\scheduling\SingleSchedulingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\scheduling\SingleSchedulingForm.Designer.cs">
+      <DependentUpon>SingleSchedulingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionQueryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionQueryEdit.Designer.cs">
+      <DependentUpon>ClientVersionQueryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionQueryForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionQueryForm.Designer.cs">
+      <DependentUpon>ClientVersionQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionForm.Designer.cs">
+      <DependentUpon>ClientVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\ClientVersionEdit.Designer.cs">
+      <DependentUpon>ClientVersionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\DictEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\DictEdit.Designer.cs">
+      <DependentUpon>DictEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\FunctionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\FunctionForm.Designer.cs">
+      <DependentUpon>FunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\SchedulingSuspensionLogForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\SchedulingSuspensionLogForm.Designer.cs">
+      <DependentUpon>SchedulingSuspensionLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\SetUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\SetUpForm.Designer.cs">
+      <DependentUpon>SetUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\SetUpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\SetUpUC.Designer.cs">
+      <DependentUpon>SetUpUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\LogForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\LogMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\LogMsgForm.Designer.cs">
+      <DependentUpon>LogMsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\MenuForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\MenuEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\MenuEdit.Designer.cs">
+      <DependentUpon>MenuEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\ModifyPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\ModifyPasswordForm.Designer.cs">
+      <DependentUpon>ModifyPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\RoleDistributionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\RoleDistributionEdit.Designer.cs">
+      <DependentUpon>RoleDistributionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\RoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\RoleEdit.Designer.cs">
+      <DependentUpon>RoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\OfficeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\OfficeEdit.Designer.cs">
+      <DependentUpon>OfficeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\FunctionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\FunctionEdit.Designer.cs">
+      <DependentUpon>FunctionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\RoleDistributionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\RoleDistributionForm.Designer.cs">
+      <DependentUpon>RoleDistributionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\UpdateNoticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\UpdateNoticeForm.Designer.cs">
+      <DependentUpon>UpdateNoticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\System\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\OfficeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\OfficeForm.Designer.cs">
+      <DependentUpon>OfficeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\DictForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\DictForm.Designer.cs">
+      <DependentUpon>DictForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\RoleForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\RoleForm.Designer.cs">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\UserForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\System\WelcomeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\System\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\CheckInAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\CheckInAgain.Designer.cs">
+      <DependentUpon>CheckInAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorSittingSettingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorSittingSettingForm.Designer.cs">
+      <DependentUpon>DoctorSittingSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorsOfficeSettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorsOfficeSettingFrm.Designer.cs">
+      <DependentUpon>DoctorsOfficeSettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorTemporaryStopFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\DoctorTemporaryStopFrm.Designer.cs">
+      <DependentUpon>DoctorTemporaryStopFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\IntersectionAppointmentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\IntersectionAppointmentForm.Designer.cs">
+      <DependentUpon>IntersectionAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\RegisterRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\RegisterRecordForm.Designer.cs">
+      <DependentUpon>RegisterRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\TopShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\TopShiftForm.Designer.cs">
+      <DependentUpon>TopShiftForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\WaitingMoveEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\WaitingMoveEdit.Designer.cs">
+      <DependentUpon>WaitingMoveEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\SignInForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\SignInForm.Designer.cs">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\SpotBookingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\SpotBookingForm.Designer.cs">
+      <DependentUpon>SpotBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\TemporaryStopFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\TemporaryStopFrm.Designer.cs">
+      <DependentUpon>TemporaryStopFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\TranDocFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\TranDocFrm.Designer.cs">
+      <DependentUpon>TranDocFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\triage\WaitingTreatmentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\triage\WaitingTreatmentForm.Designer.cs">
+      <DependentUpon>WaitingTreatmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ChartToolSocre.cs" />
+    <Compile Include="Utils\HardwareInitialClass.cs" />
+    <Compile Include="Utils\IgnoreParam.cs" />
+    <Compile Include="Utils\JLIdCardInfoClass.cs" />
+    <Compile Include="Utils\JLIDCardInfoUtil.cs" />
+    <Compile Include="Utils\ObjectPoint.cs" />
+    <Compile Include="Utils\BackgroundWorkerUtil.cs" />
+    <Compile Include="Utils\DictUtils.cs" />
+    <Compile Include="Utils\ModelHandler.cs" />
+    <Compile Include="Utils\PackReflectionEntity.cs" />
+    <Compile Include="Utils\Print\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Print\PrintNote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Print\PrintOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Print\PrintRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\WebConfigHelper.cs" />
+    <EmbeddedResource Include="Control\RoomPanelButton.resx">
+      <DependentUpon>RoomPanelButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MyTextBox.resx">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FrmProcessing.resx">
+      <DependentUpon>FrmProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\WaitingForm.resx">
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\AppointmentQueryForm.resx">
+      <DependentUpon>AppointmentQueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\AppointmentStatisticsForm.resx">
+      <DependentUpon>AppointmentStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\BlackListAdminForm.resx">
+      <DependentUpon>BlackListAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\FinshPatientForm.resx">
+      <DependentUpon>FinshPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\TodayAppointmentForm.resx">
+      <DependentUpon>TodayAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\booking\BlackListAddFrm.resx">
+      <DependentUpon>BlackListAddFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\ArticleManagementSettingForm.resx">
+      <DependentUpon>ArticleManagementSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\ClinicSettingForm.resx">
+      <DependentUpon>ClinicSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\DeptSettingsForm.resx">
+      <DependentUpon>DeptSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\VisitingTimeSettingsForm.resx">
+      <DependentUpon>VisitingTimeSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\DoctorSettingsForm.resx">
+      <DependentUpon>DoctorSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\HolidaySettingForm.resx">
+      <DependentUpon>HolidaySettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\HospitalSettingsForm.resx">
+      <DependentUpon>HospitalSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\cms\MessageManagement.resx">
+      <DependentUpon>MessageManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\MenZhenTeXuHuZhuanEdit.resx">
+      <DependentUpon>MenZhenTeXuHuZhuanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\AddRowNumberEdit.resx">
+      <DependentUpon>AddRowNumberEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\NotOpenListEdit.resx">
+      <DependentUpon>NotOpenListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\ModifyNumberSourceEdit.resx">
+      <DependentUpon>ModifyNumberSourceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\WorkNumVerificationEdit.resx">
+      <DependentUpon>WorkNumVerificationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\TingZhenEdit.resx">
+      <DependentUpon>TingZhenEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\RemarksEdit.resx">
+      <DependentUpon>RemarksEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\ScheduledListForm.resx">
+      <DependentUpon>ScheduledListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\BatchSchedulingForm.resx">
+      <DependentUpon>BatchSchedulingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\scheduling\SingleSchedulingForm.resx">
+      <DependentUpon>SingleSchedulingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\ClientVersionQueryEdit.resx">
+      <DependentUpon>ClientVersionQueryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\ClientVersionQueryForm.resx">
+      <DependentUpon>ClientVersionQueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\ClientVersionForm.resx">
+      <DependentUpon>ClientVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\ClientVersionEdit.resx">
+      <DependentUpon>ClientVersionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\DictEdit.resx">
+      <DependentUpon>DictEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\FunctionForm.resx">
+      <DependentUpon>FunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\SchedulingSuspensionLogForm.resx">
+      <DependentUpon>SchedulingSuspensionLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\SetUpForm.resx">
+      <DependentUpon>SetUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\SetUpUC.resx">
+      <DependentUpon>SetUpUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\LogMsgForm.resx">
+      <DependentUpon>LogMsgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\MenuEdit.resx">
+      <DependentUpon>MenuEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\ModifyPasswordForm.resx">
+      <DependentUpon>ModifyPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\RoleDistributionEdit.resx">
+      <DependentUpon>RoleDistributionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\RoleEdit.resx">
+      <DependentUpon>RoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\OfficeEdit.resx">
+      <DependentUpon>OfficeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\FunctionEdit.resx">
+      <DependentUpon>FunctionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\RoleDistributionForm.resx">
+      <DependentUpon>RoleDistributionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\UpdateNoticeForm.resx">
+      <DependentUpon>UpdateNoticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\OfficeForm.resx">
+      <DependentUpon>OfficeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\DictForm.resx">
+      <DependentUpon>DictForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\RoleForm.resx">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\System\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\CheckInAgain.resx">
+      <DependentUpon>CheckInAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\DoctorSittingSettingForm.resx">
+      <DependentUpon>DoctorSittingSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\DoctorsOfficeSettingFrm.resx">
+      <DependentUpon>DoctorsOfficeSettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\DoctorTemporaryStopFrm.resx">
+      <DependentUpon>DoctorTemporaryStopFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\IntersectionAppointmentForm.resx">
+      <DependentUpon>IntersectionAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\RegisterRecordForm.resx">
+      <DependentUpon>RegisterRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\TopShiftForm.resx">
+      <DependentUpon>TopShiftForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\WaitingMoveEdit.resx">
+      <DependentUpon>WaitingMoveEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\SignInForm.resx">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\SpotBookingForm.resx">
+      <DependentUpon>SpotBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\TemporaryStopFrm.resx">
+      <DependentUpon>TemporaryStopFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\TranDocFrm.resx">
+      <DependentUpon>TranDocFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\triage\WaitingTreatmentForm.resx">
+      <DependentUpon>WaitingTreatmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ExDll\备份\sand.ini" />
+    <None Include="ExDll\社保卡\POS.INI">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExDll\社保卡\trans.ldb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExDll\通用身份证\license.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExDll\通用身份证\Sdtapi.lib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExDll\CSkin.dll" />
+    <Content Include="ExDll\Newtonsoft.Json.dll" />
+    <Content Include="ExDll\zh-Hans\DevExpress.Data.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.Office.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.Printing.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.RichEdit.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.Sparkline.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.Utils.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraBars.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraEditors.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraLayout.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraPrinting.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\DevExpress.XtraTreeList.v13.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zh-Hans\System.Net.Http.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\zxing.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\备份\des.dll" />
+    <Content Include="ExDll\备份\LibSand.dll" />
+    <Content Include="ExDll\备注%28说明%29.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\BACRW.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\CJ201api.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\DCIC32.DLL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\trans.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\ZT930DLL.DLL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\社保卡\ZT_DEV.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\dewlt.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\JpgDll.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\SavePhoto.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\Sdtapi.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\Sdtapi.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExDll\通用身份证\WltRS.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="Image\bg.png" />
+    <Content Include="Image\favicon.ico" />
+    <Content Include="Image\Icon.ico" />
+    <Content Include="Image\man.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\woman.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Image\bg1.png" />
+    <Content Include="Image\bg2.png" />
+    <Content Include="Image\loading.gif" />
+    <Content Include="Image\welcom.jpg" />
+    <Content Include="Image\图片1.png" />
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xr.Common\Xr.Common.csproj">
+      <Project>{2a32eac8-c9fd-4e0d-a0c5-f6d1bfeb7462}</Project>
+      <Name>Xr.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xr.Http\Xr.Http.csproj">
+      <Project>{b694c623-4dab-40dc-9446-3d0bf4fb0249}</Project>
+      <Name>Xr.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xr\Xr.csproj">
+      <Project>{dda4e544-c964-4ef6-89e9-a997b595fbd5}</Project>
+      <Name>Xr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
